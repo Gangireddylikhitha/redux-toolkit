@@ -1,0 +1,93 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 13vh;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px 2px rgb(210, 206, 206);
+  padding: 10px 20px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+
+  .logo {
+    mix-blend-mode: multiply;
+
+    a {
+      color: #000;
+    }
+  }
+
+  .ant-menu-horizontal {
+    line-height: 80px;
+    display: flex;
+    gap: 20px;
+
+    .category-name {
+      font-size: 16px;
+    }
+
+    .ant-menu-item {
+      font-size: 16px;
+
+      .anticon {
+        font-size: 20px; 
+        vertical-align: middle;
+      }
+
+      a {
+        color: #000;
+      }
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+      margin-left: 35px;
+     
+      
+
+      .search-icon {
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .search-bar {
+        display: inline-block;
+        margin-left: 5px;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 200px; /* Adjust as necessary */
+      }
+    }
+  }
+
+  // Media query for mobile view
+  @media (max-width: 768px) {
+    .ant-menu-horizontal {
+      .category-name {
+        display: none; // Hide category name on mobile
+      }
+
+      .ant-menu-item {
+        font-size: 0; // Hide text links
+        position: relative; // Position for icon display
+
+        a {
+          padding: 10px; // Adjust padding for touch targets
+        }
+
+        .icon-only {
+          font-size: 20px; // Show icon in mobile
+        }
+      }
+
+      .search-container {
+        margin-left: 0; // Adjust search icon position if needed
+      }
+    }
+  }
+}

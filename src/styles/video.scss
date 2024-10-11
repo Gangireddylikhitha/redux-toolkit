@@ -1,0 +1,25 @@
+.video-container {
+    padding-top: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+    iframe {
+      max-width: 100%; 
+      height: auto; 
+    }
+  }
+  
+
+  .custom-heading{
+   
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 10%;
+    .colour-ideas{
+      color:purple;
+    }
+  }
+
+ 

@@ -1,0 +1,25 @@
+
+
+.about-container {
+    padding: 100px;
+    display:flex;
+    flex-direction: column;
+  gap:100px;
+ 
+    img {
+      max-width: 100%; 
+
+      border-radius: 8px; // Optional: Add some styling to images
+    }
+    .ant-typography {
+        margin-top: 30px; 
+  
+      }
+      Footer{
+        color:rgb(179, 41, 114);
+        h1{
+            color:purple;
+        }
+      }
+  }
+  
