@@ -1,11 +1,10 @@
-// src/slices/homeSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const homeSlice = createSlice({
   name: 'home',
   initialState: {
-    videoGallery: [],  // You can set initial state with your video data if available
-    imageGallery: [],  // Similarly for images
+    videoGallery: [],  
+    imageGallery: [], 
     
   },
   reducers: {
@@ -15,7 +14,7 @@ const homeSlice = createSlice({
     setImageGallery: (state, action) => {
       state.imageGallery = action.payload;
     },
-    // Add more reducers if needed
+    
   },
 });
 
